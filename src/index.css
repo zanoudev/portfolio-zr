@@ -5,7 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: Set default font families */
 body {
   @apply font-body text-gray-800 bg-white;
   scroll-behavior: smooth;
@@ -15,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-heading;
 }
 
-/* Custom scrollbar (optional) */
 ::-webkit-scrollbar {
   width: 8px;
 }
