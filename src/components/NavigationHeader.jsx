@@ -29,7 +29,7 @@ const NavigationHeader = () => {
           {/* Blog as an external link */}
           <li>
             <a 
-              href="https://yourblog.com" 
+              href="https://notion.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-black font-['Young_Serif'] text-[24px] font-normal hover:text-gray-600 transition-colors"
