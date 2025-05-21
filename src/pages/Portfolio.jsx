@@ -1,16 +1,14 @@
 import React, { useRef } from 'react';
-import NavigationHeader from '../components/NavigationHeader'; // Adjust the import path as needed
+import NavigationHeader from '../components/NavigationHeader'; 
 import ExperienceSection from '../components/ExperienceSection';
 
 function Portfolio() {
-  // Create refs for each section
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
   const storyRef = useRef(null);
   const interestsRef = useRef(null);
   const contactRef = useRef(null);
 
-  // Scroll function
   const scrollToSection = (elementRef) => {
     elementRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
