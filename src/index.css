@@ -1,0 +1,70 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Set default font families */
+body {
+  @apply font-body text-gray-800 bg-white;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.z-logo {
+  position: relative;
+  perspective: 500px;
+  transition: transform 0.3s ease;
+}
+
+.z-logo:hover {
+  transform: rotateY(10deg);
+}
+
+.z-logo::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255,255,255,0.1);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.z-logo:hover::before {
+  opacity: 1;
+}
+
+.main-title {
+  @apply h-[68px] flex justify-center text-black text-[48px] font-normal;
+  font-family: 'Young Serif';
+}
+.subtitle {
+  @apply h-[24px] flex justify-center text-black text-[20px] font-normal;
+  font-family: 'Averia Serif Libre';
+}
